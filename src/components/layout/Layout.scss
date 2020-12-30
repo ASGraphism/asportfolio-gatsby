@@ -1,0 +1,75 @@
+@import "../../scss/variables";
+@import "../../scss/animate";
+@import "../../scss/reset";
+@import "../../scss/global";
+
+body:before,
+body:after {
+  content: "";
+  position: fixed;
+  background: var(--hint);
+  left: 0;
+  right: 0;
+  height: 4rem;
+  z-index: 100000;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
+}
+body {
+  border-left: 4rem solid var(--hint);
+  border-right: 4rem solid var(--hint);
+}
+
+main {
+  position: relative;
+  z-index: 9000;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background: #f3f3f3;
+  &.home {
+    background: var(--light);
+    .r-side {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .content-wrap {
+      max-width: 35rem;
+      margin: 0 auto;
+      font-weight: var(--F-light);
+      line-height: 2.5rem;
+    }
+    .testimonial {
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #7e8a89;
+      margin-bottom: 10rem;
+    }
+    h1 {
+      padding-top: 4rem;
+    }
+  }
+  .container-side {
+    flex: 1;
+    &-colored {
+      background: #a29bfe;
+      color: #fff;
+    }
+    &.container-side-colored {
+      h1 {
+        color: var(--background);
+      }
+      .testimonial {
+        color: var(--light);
+      }
+    }
+  }
+}

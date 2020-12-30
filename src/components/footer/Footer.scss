@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Icons";
+    src: url("../../fonts/icomoon.eot?gfenfc");
+    src: url("../../fonts/icomoon.eot?gfenfc#iefix") format("embedded-opentype"),
+      url("../../fonts/icomoon.ttf?gfenfc") format("truetype"),
+      url("../../fonts/icomoon.woff?gfenfc") format("woff"),
+      url("../../fonts/icomoon.svg?gfenfc#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  footer {
+    position: fixed;
+    height: 4rem;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 0 4rem;
+    z-index: 110000;
+  
+    .part-1,
+    .part-2 {
+      float: left;
+      width: 50%;
+      position: relative;
+      line-height: 4rem;
+    }
+  
+    .part-1 {
+      a {
+        margin-right: 1rem;
+        text-align: left;
+        font-family: "Icons";
+        color: var(--text);
+        font-size: 2rem;
+        transition: 0.3s color ease-in-out;
+  
+        &:hover,
+        &:focus {
+          color: var(--dark);
+        }
+      }
+    }
+  
+    .part-2 {
+      text-align: right;
+      font-size: 1.2rem;
+    }
+  }
+  
