@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout/Layout"
-import HomeArea from "../components/home/Home";
+import PresentationArea from "../components/presentation/Presentation";
 
 // markup
 
@@ -8,7 +8,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
     <Layout>
-      <HomeArea />
+      <PresentationArea />
     </Layout>
     </>
   )
