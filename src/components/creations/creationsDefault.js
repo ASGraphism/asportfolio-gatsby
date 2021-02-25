@@ -1,52 +1,73 @@
 export const creationsDefault = [
-    {
-        id: "a",
-        name:"Gs Auto Miniatures",
-        img: "",
-        url:"",
-        filter: ["Print", "Web", "Brand"]
-      },
-      {
-        id: "b",
-        name:"Toits & dômes",
-        img: "",
-        url:"",
-        filter: ["Web", "Brand"]
-      },
-      {
-        id: "c",
-        name:"Wes da best",
-        img: "",
-        url:"",
-        filter: ["Print", "Web"]
-      },
-      {
-        id: "d",
-        name:"Agenda afrique",
-        img: "",
-        url:"",
-        filter: ["Web", "Brand"]
-      },
-      {
-        id: "e",
-        name:"Capcho",
-        img: "",
-        url:"",
-        filter: ["Print", "Web"]
-      },
-      {
-        id: "f",
-        name:"Mycoach'in",
-        img: "",
-        url:"",
-        filter: ["Web", "App"]
-      }
-]
+	{
+		id: "a",
+		name: "GS Auto Miniatures",
+		pictures: {
+			logo:
+				"img/projects/gs-auto-miniatures/gs-auto-miniatures-thumb.png",
+			gallery: ["img1.jpg", "img2.jpg"],
+		},
+		url: "",
+		filter: ["Print", "Web", "Brand"],
+	},
+	{
+		id: "b",
+		name: "Toits & Dômes",
+		pictures: {
+			logo:
+				"../../assets/img/projects/toits-et-domes/toits-et-domes-thumb.png",
+			gallery: ["img1.jpg", "img2.jpg"],
+		},
+		url: "",
+		filter: ["Web", "Brand"],
+	},
+	{
+		id: "c",
+		name: "Wes da Best",
+		pictures: {
+			logo: "../../assets/img/projects/wes-da-best/wes-da-best-thumb.png",
+			gallery: ["img1.jpg", "img2.jpg"],
+		},
+		url: "",
+		filter: ["Print", "Web"],
+	},
+	{
+		id: "d",
+		name: "Agenda Afrique",
+		pictures: {
+			logo:
+				"../../assets/img/projects/agenda-afrique/agenda-afrique-thumb.png",
+			gallery: ["img1.jpg", "img2.jpg"],
+		},
+		url: "",
+		filter: ["Web", "Brand"],
+	},
+	{
+		id: "e",
+		name: "Capcho",
+		pictures: {
+			logo: "../../assets/img/projects/capcho/capcho-thumb.png",
+			gallery: ["img1.jpg", "img2.jpg"],
+		},
+		url: "",
+		filter: ["Print", "Web"],
+	},
+	{
+		id: "f",
+		name: "MyCoach'in",
+		pictures: {
+			logo: "../../assets/img/projects/mycoachin/mycoachin-thumb.png",
+			gallery: ["img1.jpg", "img2.jpg"],
+		},
+		url: "",
+		filter: ["Web", "App"],
+	},
+];
 
 export const filtersCreation = [
-    { "label": "all", "isChecked": true },
-    { "label": "Print", "isChecked": false },
-    { "label": "Web", "isChecked": false },
-    { "label": "Brand", "isChecked": false },
-    { "label": "App", "isChecked": false }
-]
+	{ label: "all", isChecked: true },
+	{ label: "Print", isChecked: false },
+	{ label: "Web", isChecked: false },
+	{ label: "Brand", isChecked: false },
+	{ label: "App", isChecked: false },
+];
