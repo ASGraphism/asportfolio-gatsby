@@ -15,8 +15,12 @@
   },
   "license": "0BSD",
   "dependencies": {
-    "gatsby": "^2.26.1",
+    "gatsby": "^2.32.8",
+    "gatsby-image": "^2.11.0",
     "gatsby-plugin-sass": "^2.8.0",
+    "gatsby-plugin-sharp": "^2.14.3",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-sharp": "^2.12.0",
     "node-sass": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

@@ -14,8 +14,7 @@ export const creationsDefault = [
 		id: "b",
 		name: "Toits & Dômes",
 		pictures: {
-			logo:
-				"../../assets/img/projects/toits-et-domes/toits-et-domes-thumb.png",
+			logo: "img/projects/toits-et-domes/toits-et-domes-thumb.png",
 			gallery: ["img1.jpg", "img2.jpg"],
 		},
 		url: "",
@@ -25,7 +24,7 @@ export const creationsDefault = [
 		id: "c",
 		name: "Wes da Best",
 		pictures: {
-			logo: "../../assets/img/projects/wes-da-best/wes-da-best-thumb.png",
+			logo: "img/projects/wes-da-best/wes-da-best-thumb.png",
 			gallery: ["img1.jpg", "img2.jpg"],
 		},
 		url: "",
@@ -35,8 +34,7 @@ export const creationsDefault = [
 		id: "d",
 		name: "Agenda Afrique",
 		pictures: {
-			logo:
-				"../../assets/img/projects/agenda-afrique/agenda-afrique-thumb.png",
+			logo: "img/projects/agenda-afrique/agenda-afrique-thumb.png",
 			gallery: ["img1.jpg", "img2.jpg"],
 		},
 		url: "",
@@ -46,7 +44,7 @@ export const creationsDefault = [
 		id: "e",
 		name: "Capcho",
 		pictures: {
-			logo: "../../assets/img/projects/capcho/capcho-thumb.png",
+			logo: "img/projects/capcho/capcho-thumb.png",
 			gallery: ["img1.jpg", "img2.jpg"],
 		},
 		url: "",
@@ -56,7 +54,7 @@ export const creationsDefault = [
 		id: "f",
 		name: "MyCoach'in",
 		pictures: {
-			logo: "../../assets/img/projects/mycoachin/mycoachin-thumb.png",
+			logo: "img/projects/mycoachin/mycoachin-thumb.png",
 			gallery: ["img1.jpg", "img2.jpg"],
 		},
 		url: "",
