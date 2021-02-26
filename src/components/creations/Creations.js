@@ -1,29 +1,11 @@
 import React, { useState } from "react";
 import * as creation from "./creationsDefault";
 import IsoTopeGrid from "react-isotope";
-import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+
 import "./creations.scss";
 
-const CreationsArea = () => {
-	const data = useStaticQuery(graphql`
-		query {
-			toto: file(
-				relativePath: {
-					eq: "img/projects/wes-da-best/wes-da-best-thumb.png"
-				}
-			) {
-				childImageSharp {
-					fixed(width: 400) {
-						...GatsbyImageSharpFixed
-					}
-				}
-			}
-		}
-	`);
-
+const CreationsArea = ({ data }) => {
 	const [filters, updateFilters] = useState(creation.filtersCreation);
-	console.log("data", data);
 
 	const onFilter = (event) => {
 		const {
@@ -71,14 +53,14 @@ const CreationsArea = () => {
 					<IsoTopeGrid
 						gridLayout={creation.creationsDefault} // gridlayout of cards
 						noOfCols={3} // number of columns show in one row
-						unitWidth={400} // card width of 1 unit
-						unitHeight={300} // card height of 1 unit
+						unitWidth={200} // card width of 1 unit
+						unitHeight={100} // card height of 1 unit
 						filters={filters} // list of selected filters
 					>
 						{creation.creationsDefault.map((card) => (
 							<div key={card.id} className={card.filter[0]}>
-								<Img fixed={data.toto.childImageSharp.fixed} />
 								{card.name}
+								<img src={card.pictures.logo} alt={card.name} />
 							</div>
 						))}
 					</IsoTopeGrid>
